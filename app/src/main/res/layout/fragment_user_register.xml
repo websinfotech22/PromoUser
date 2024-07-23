@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
     tools:context=".Fragment.UserRegisterFragment">
 
     <LinearLayout
@@ -23,7 +25,6 @@
         <EditText
             android:id="@+id/etNameRegister"
             style="@style/myEdittextStyle"
-            android:drawableStart="@drawable/user"
             android:inputType="textCapSentences" />
 
 
@@ -34,7 +35,6 @@
         <EditText
             android:id="@+id/etEmailRegister"
             style="@style/myEdittextStyle"
-            android:drawableStart="@drawable/email"
             android:inputType="textEmailAddress" />
 
 
@@ -66,7 +66,6 @@
                 android:layout_marginStart="@dimen/_10sdp"
                 android:id="@+id/etNumberRegister"
                 style="@style/myEdittextStyle"
-                android:drawableStart="@drawable/phone"
                 android:inputType="numberDecimal"
                 android:maxLength="10" />
         </LinearLayout>

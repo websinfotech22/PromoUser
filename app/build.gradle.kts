@@ -57,4 +57,12 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     //sdp
     implementation("com.intuit.sdp:sdp-android:1.1.0")
+
+    // Navigation components
+    val nav_version = "2.7.5"
+    implementation("androidx.navigation:navigation-compose:$nav_version")
+    implementation("androidx.navigation:navigation-fragment:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+    //County code Piker
+    implementation("com.hbb20:ccp:2.5.1")
 }
