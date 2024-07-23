@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.UserRegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+
+
+
+        <TextView
+            style="@style/myTextView"
+            android:text="Enter your name" />
+
+
+        <EditText
+            android:id="@+id/etNameRegister"
+            style="@style/myEdittextStyle"
+            android:drawableStart="@drawable/user"
+            android:inputType="textCapSentences" />
+
+
+        <TextView
+            style="@style/myTextView"
+            android:text="Enter your email" />
+
+        <EditText
+            android:id="@+id/etEmailRegister"
+            style="@style/myEdittextStyle"
+            android:drawableStart="@drawable/email"
+            android:inputType="textEmailAddress" />
+
+
+        <TextView
+            style="@style/myTextView"
+            android:text="Enter your number" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.hbb20.CountryCodePicker
+                android:background="@drawable/bcakground_phone"
+                android:id="@+id/countryCodePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                app:ccp_contentColor="@color/liteBlack"
+                app:ccp_showFlag="false"
+                app:ccp_showArrow="false"
+                app:ccp_showNameCode="false"/>
+
+
+            <EditText
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/etNumberRegister"
+                style="@style/myEdittextStyle"
+                android:drawableStart="@drawable/phone"
+                android:inputType="numberDecimal"
+                android:maxLength="10" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tvNextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/background_text_btn"
+            android:gravity="center"
+            android:text="Next"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</ScrollView>
